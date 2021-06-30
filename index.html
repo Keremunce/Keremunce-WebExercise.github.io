@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wooden Toy Shop</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="icon" type="image/png" href="img/LOGO-1.png" />
+
+</head>
+
+
+<body>
+    <div id="container">
+        <div id="SearchBar">
+            <input id="search" type="search" placeholder="Ocak ayında %99,99'a varan indirimler">
+            <input id="Searchbutton" type="button">
+        </div>
+        <div class="Menu">
+            <div id="LOGO1">
+                <img class="logo" src="img/LOGO-1.png">
+            </div>
+
+
+            <ul>
+                <li>
+                    <a href="Home.html" title="Ana Sayfa ">Home</a>
+                </li>
+                <li>
+                    <a href="gallery.html" title="Galeri">
+                    Shop 
+                    </a>
+                </li>
+                <li>
+                    <a class="slide_down_menu">About Us<img  id="arrow"src="img/icons8-expand-arrow-26.png"> </a>
+                </li>
+                <ul class="ul_menu">
+                    <li>
+                        <a href="# ">- FAQ</a>
+                    </li>
+                    <li>
+                        <a href="# ">- Returns</a>
+                    </li>
+                    <li>
+                        <a href="# ">- Shipping</a>
+                    </li>
+                </ul>
+                <li>
+                    <a href="Contact.html " title="İletişim ">Contact</a>
+                </li>
+            </ul>
+            <div id="icons">
+                <img class="mail " src="img/icons8-important-mail-50.png ">
+                <img class="mail " src="img/icons8-facebook-64.png ">
+            </div>
+        </div>
+
+        <div class="Main">
+            <div id="ImageBox">
+                <img id="bigimg" src="img/konstruktor-playing-colorful-toy-blocks-kids-deti-igra-1.jpg">
+                <div id="ShopBttnDiv">
+                    <h1 align="center">New Arrivals</h1>
+                    <button id="ShopButton">SHOP NOW</button>
+                </div>
+            </div>
+            <div id="PictureBox">
+                <div class="box5 ">
+                    <img class="picture " src="img/zebra.jpg ">
+                    <p class="Price " align="center "> 10.99$ <del>11.99$</del></p>
+                </div>
+                <div class=" box5 ">
+                    <img class="picture " src="img/puppy.jpg ">
+                    <p class="Price " align="center ">10$</p>
+                </div>
+                <div class="box5 ">
+                    <img class="picture " src="img/Donkey.jpg ">
+                    <p class="Price " align="center ">11$ -<b>SOLD OUT</b>
+                    </p>
+                </div>
+                <div class="box5 ">
+                    <img class="picture " src="img/Donkey.jpg ">
+                    <p class="Price " align="center ">11$ -<b>SOLD OUT</b>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        @media screen and ( max-width: 768px, max-height 768px) {
+            #PictureBox {
+                width: 100%;
+            }
+            .box5 {
+                width: 100%;
+            }
+            #ImageBox {
+                width: 50%;
+            }
+            #ShopBttnDiv,
+            h1 {
+                width: 10%;
+                color: red;
+            }
+        }
+        
+        #container {
+            width: 100%;
+            max-width: 1200px;
+        }
+        
+        .Price {
+            margin-top: 5px;
+            font-family: "Monaco ", monospace;
+        }
+        
+        .picture {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+        }
+        
+        .box5:hover {
+            cursor: pointer;
+            filter: brightness(60%);
+            transition: 1s;
+        }
+        
+        .box5 {
+            /* border: 1px solid blueviolet; */
+            width: 45%;
+            float: left;
+            height: auto;
+            margin: 7px;
+        }
+        
+        #PictureBox {
+            position: absolute;
+            /* border: 1px solid blue; */
+            width: 32.5%;
+            height: 100%;
+            top: 0;
+            right: 0;
+        }
+        
+        h1 {
+            color: white;
+            /* position: absolute; */
+            font-family: "Monaco ", monospace;
+            /* border: 1px solid blueviolet; */
+        }
+        
+        #ShopBttnDiv {
+            width: 30%;
+            height: 20%;
+            min-width: 100px;
+            /* border: 1px solid red; */
+            position: absolute;
+            display: flex;
+            /* justify-content: center; */
+            /* align-items: center; */
+            left: 20%;
+            top: 27%;
+            z-index: 1000;
+        }
+        
+        #ShopButton {
+            color: white;
+            border: none;
+            background-color: #008080;
+            /* position: absolute; */
+            font-size: 16px;
+            padding: 5% 6%;
+            margin: 4%;
+            /* margin-left: 30%; */
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        .Main {
+            /* margin: 200px 100px 100px 350px; */
+            width: 77%;
+            max-width: 1500px;
+            height: 62%;
+            margin: 15% 20%;
+            position: relative;
+            position: absolute;
+            /* border: 1px solid black; */
+        }
+        
+        .Menu {
+            background-color: rgb(25, 173, 159);
+            width: 20%;
+            max-width: 250px;
+            height: 100%;
+            position: fixed;
+        }
+        
+        #ImageBox {
+            /* border: 1px solid red; */
+            width: 68%;
+            height: 100%;
+        }
+        
+        #bigimg {
+            width: 100%;
+            height: 100%;
+            /* border: 1px solid black; */
+            filter: brightness(60%);
+            /* Position: relative; */
+            /* Background-repeat: no-repeat; */
+            /* Background-size: cover; */
+        }
+        
+        #icons {
+            width: 50%;
+            height: 5%;
+            /* border: 1px solid black; */
+            margin: 15% 0% 15% 21%;
+        }
+        
+        .mail {
+            /* border: 1px solid red; */
+            width: 50%;
+            height: 100%;
+            float: left;
+        }
+        
+        #LOGO1 {
+            width: 100%;
+            /* border: 1px solid red; */
+        }
+        
+        .logo {
+            background-color: rgb(25, 173, 159);
+            width: 100%;
+            height: auto;
+        }
+        
+        #SearchBar {
+            position: absolute;
+            width: 30%;
+            height: 5.5%;
+            margin: 5% 45%;
+            /* border: 1px solid red; */
+        }
+        
+        #Searchbutton {
+            /* margin: 50px 1000px; */
+            margin: 0 100%;
+            position: absolute;
+            width: 20%;
+            height: 100%;
+            min-height: 40px;
+            background-color: #333;
+            background-image: url(img/icons8-search-64.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 40px;
+            cursor: pointer;
+        }
+        
+        #search {
+            width: 100%;
+            /* margin: 50px 600px; */
+            position: absolute;
+            border: 3px solid black;
+            padding: 10px 10px 10px 15px;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            text-align: center;
+            /* border: 1px solid black; */
+        }
+        /* ul li {
+            border: 1px solid blueviolet;
+            width: 100%;
+        } */
+        
+        li a {
+            display: block;
+            padding: 15px 0px 15px 0px;
+            width: 100%;
+            font-size: 20px;
+            text-decoration: none;
+            color: white;
+            font-size: small;
+            /* border: 1px solid red; */
+        }
+        
+        #arrow {
+            width: 7%;
+            padding-left: 5px;
+        }
+        
+        .ul_menu {
+            display: none;
+            width: 100%;
+            /* border: 1px solid red; */
+        }
+        
+        .slide_down_menu {
+            cursor: pointer;
+        }
+        /*FOOTER*/
+    </style>
+    <script>
+        $(function() {
+            var ul = $(".ul_menu");
+
+            $(document).click(function() {
+                ul.slideUp(400);
+            });
+
+            $(".slide_down_menu").on("click", function(x) {
+                x.stopPropagation();
+                ul.slideToggle(400);
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

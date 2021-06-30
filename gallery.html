@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="img/LOGO-1.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+    <input id="search" type="search" placeholder="Ocak ayında %99,99'a varan indirimler">
+    <input id="button" type="button">
+    <div class="box1">
+        <a href="#"><img class="logo" src="img/LOGO-1.png" width="150px" height="150px"></a>
+
+
+        <ul>
+            <li>
+                <a href="Home.html" title="Ana Sayfa ">Home</a>
+            </li>
+
+            <li class="dropdown">
+                <a href="gallery.html" title="Galeri">
+                    Shop
+                </a>
+
+            </li>
+            <li>
+                <a class="slide_down_menu">About Us<img  id="arrow"src="img/icons8-expand-arrow-26.png"> </a>
+            </li>
+            <ul class="ul_menu">
+                <li>
+                    <a href="# ">- FAQ</a>
+                </li>
+                <li>
+                    <a href="# ">- Returns</a>
+                </li>
+                <li>
+                    <a href="# ">- Shipping</a>
+                </li>
+            </ul>
+            <li>
+                <a href="Contact.html" title="İletişim ">Contact</a>
+            </li>
+        </ul>
+        <img class="mail" src="img/icons8-important-mail-50.png">
+        <img class="mail" src="img/icons8-facebook-64.png">
+    </div>
+    <div class="box3">
+        <div class="box4">
+            <img class="bigimg" src="img/3dfe14f579944899251b5d6cb1e4d3d5_1920x.jpg">
+            <p>Ahşap müzik kutusu bebek oyuncakları</p>
+
+        </div>
+        <div class="box4">
+            <img class="bigimg" src="img/infant-music-hape-baby-drum-musical-toy-3_1920x.jpg">
+            <p>Ahşap müzik kutusu bebek oyuncakları</p>
+        </div>
+        <div class="box4">
+            <img class="bigimg" src="img/infant-music-hape-rotating-music-box-baby-toy-3_1920x.jpeg">
+            <p align="center">Ahşap müzik kutusu bebek oyuncakları</p>
+        </div>
+        <div class="box4">
+            <img class="bigimg" src="img/musical-instruments-hape-pound-tap-bench-with-slide-out-xylophone-2_1920x.jpeg">
+            <p align="center">Ahşap müzik kutusu bebek oyuncakları</p>
+        </div>
+        <div class="box4">
+            <img class="bigimg" src="img/push-pull-hape-walk-a-long-puppy-wooden-pull-toy-3_1920x.jpg">
+            <p align="center">Ahşap müzik kutusu bebek oyuncakları</p>
+        </div>
+        <div class="box4">
+            <img class="bigimg" src="img/push-pull-hape-walk-a-long-snail-toddler-wooden-pull-toy-3_1920x.jpg">
+            <p align="center">Ahşap müzik kutusu bebek oyuncakları</p>
+        </div>
+    </div>
+
+
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        p {
+            padding: 5px;
+            margin-top: 5px;
+        }
+        
+        .box3 {
+            margin: 200px 100px 100px 350px;
+            width: 77%;
+            height: auto;
+            position: absolute;
+        }
+        
+        .box4 {
+            width: 45%;
+            height: auto;
+            float: left;
+            margin: 15px;
+            background-color: whitesmoke;
+            box-shadow: 10px 10px 10px 10px #d9d9d9;
+        }
+        
+        .bigimg {
+            width: 100%;
+            height: auto;
+        }
+        
+        .box4:hover {
+            cursor: pointer;
+            filter: brightness(60%);
+            transition: 1s;
+        }
+        
+        #account {
+            background-repeat: no-repeat;
+            margin: 10px;
+            padding-left: 60px;
+        }
+        
+        .mail {
+            /* border: 1px solid red; */
+            width: 15%;
+            padding: 50px;
+        }
+        
+        .logo {
+            background-color: rgb(25, 173, 159);
+            margin: 50px;
+            width: 200px;
+            height: 200px;
+        }
+        
+        #button {
+            margin: 50px 1000px;
+            position: absolute;
+            z-index: 1;
+            width: 100px;
+            height: 50px;
+            background-color: #333;
+            background-image: url(img/icons8-search-64.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 40px;
+            cursor: pointer;
+        }
+        
+        .box1 {
+            background-color: rgb(25, 173, 159);
+            width: 20%;
+            height: 100%;
+            position: fixed;
+        }
+        
+        .box2 {
+            background-repeat: no-repeat;
+            background-size: 200px;
+            margin: 150px 200px 150px 400px;
+            width: 1000px;
+            height: 800px;
+            border: 10px solid black;
+        }
+        
+        #search {
+            width: 400px;
+            height: 50px;
+            margin: 50px 600px;
+            position: absolute;
+            border: 3px solid black;
+            padding: 10px 10px 10px 15px;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0px 50px 50px 80px;
+            width: 50%;
+            text-align: center;
+        }
+        
+        li a {
+            display: block;
+            padding: 8px 16px;
+            font-size: 20px;
+            text-decoration: none;
+            color: white;
+            font-size: small;
+        }
+        
+        #Lorem {
+            padding: 10px;
+            font-size: medium;
+        }
+        
+        #arrow {
+            width: 9%;
+            padding-left: 5px;
+        }
+        
+        .ul_menu {
+            display: none;
+            width: 100%;
+            /* border: 1px solid red; */
+            margin: 10px;
+        }
+        
+        .slide_down_menu {
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        $(function() {
+            var ul = $(".ul_menu");
+
+            $(document).click(function() {
+                ul.slideUp(400);
+            });
+
+            $(".slide_down_menu").on("click", function(x) {
+                x.stopPropagation();
+                ul.slideToggle(400);
+            });
+
+        });
+    </script>
+</body>
+
+</html>
